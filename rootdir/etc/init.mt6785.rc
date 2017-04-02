@@ -44,6 +44,9 @@ on boot
     # Set permission for Goodix FP
     chown system system /dev/goodix_fp
 
+    # Update touchscreen firmware
+    write /proc/touchpanel/tp_fw_update 1
+
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
     
