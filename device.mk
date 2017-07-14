@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mt6785.rc
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/idc/mtk-kpd.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/mtk-kpd.idc \
