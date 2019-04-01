@@ -56,6 +56,9 @@ on boot
     # Game mode
     write /proc/touchpanel/game_switch_enable 1
 
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
     
