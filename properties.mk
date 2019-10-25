@@ -3,6 +3,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.bionic.cpu_variant=cortex-a76 \
     ro.bionic.2nd_cpu_variant=cortex-a76
 
+# Bluetooth
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
+
 # Dalvik
 PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.isa.arm.variant=cortex-a76 \
