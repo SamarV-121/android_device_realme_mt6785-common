@@ -47,6 +47,12 @@ on boot
     # Update touchscreen firmware
     write /proc/touchpanel/tp_fw_update 1
 
+    # Disable edge limit control interface
+    write /proc/touchpanel/oppo_tp_limit_enable 0
+
+    # Enable oppo touchpanel direction
+    write /proc/touchpanel/oppo_tp_direction 1
+
 on property:sys.boot_completed=1
     setprop vendor.oppo.biometrics.fingerprint.boot_completed 1
     
