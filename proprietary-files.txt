@@ -46,7 +46,6 @@ lib64/libmtkshifter.so
 bin/kpoc_charger
 etc/init/kpoc_charger.rc
 lib/libshowlogo.so
-lib/libsysenv_system.so
 
 # Media - from RMX2001_11_B.49
 vendor/lib/libvpud_vcodec.so:product/vendor_overlay/29/lib/libvpud_vcodec.so|a040fa35b7f4eef98197e2fded6fc71018408a8a
