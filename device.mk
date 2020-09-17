@@ -45,7 +45,8 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6785.rc
+    init.mt6785.rc \
+    fstab.mt6785
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
