@@ -1,3 +1,7 @@
+# Blurs
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # Camera
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera \
