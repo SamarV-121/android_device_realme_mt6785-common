@@ -104,6 +104,8 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # RcsService
 PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
     RcsService
 
 # Screen density
