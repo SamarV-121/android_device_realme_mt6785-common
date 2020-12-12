@@ -25,6 +25,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/realme/RMX2001/RMX2001-vendor.mk)
 
+# IMS
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # VNDK
@@ -41,7 +44,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
- 
+
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml
 
@@ -97,7 +100,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
-# Telephony Jars
+# Telephony
+PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
+
 PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
