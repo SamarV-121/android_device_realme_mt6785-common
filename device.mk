@@ -108,6 +108,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
+# Symbols
+PRODUCT_PACKAGES += \
+    libshim_showlogo
+
 # Telephony
 PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
 
