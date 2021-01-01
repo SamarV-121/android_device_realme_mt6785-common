@@ -1,0 +1,17 @@
+[
+  {
+    "repository" : "SamarV-121/proprietary_vendor_realme_RMX2001"
+    "target_path": "vendor/realme/RMX2001",
+    "branch"     : "lineage-18.1"
+  },
+  {
+    "repository" : "PixelExperience/vendor_mediatek_interfaces",
+    "target_path": "vendor/mediatek/interfaces",
+    "branch"     : "eleven"
+  },
+  {
+    "repository" : "PixelExperience/vendor_mediatek_ims",
+    "target_path": "vendor/mediatek/ims",
+    "branch"     : "eleven"
+  }
+]
