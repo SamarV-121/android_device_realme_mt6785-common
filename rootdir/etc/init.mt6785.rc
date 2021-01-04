@@ -43,6 +43,9 @@ on post-fs-data
 on boot
     # Set permission for Goodix FP
     chown system system /dev/goodix_fp
+ 
+    # DT2W
+    write /proc/touchpanel/double_tap_enable 1
 
     # Update touchscreen firmware
     write /proc/touchpanel/tp_fw_update 1
