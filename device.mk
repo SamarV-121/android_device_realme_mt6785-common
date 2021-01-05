@@ -99,7 +99,7 @@ PRODUCT_PACKAGES += \
     power.mt6785
 
 # Properties
--include $(DEVICE_PATH)/system_prop.mk
+-include $(DEVICE_PATH)/properties.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # RcsService
