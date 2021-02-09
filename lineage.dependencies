@@ -1,7 +1,7 @@
 [
   {
-    "repository" : "SamarV-121/proprietary_vendor_realme_RMX2001"
-    "target_path": "vendor/realme/RMX2001",
+    "repository" : "SamarV-121/proprietary_vendor_realme",
+    "target_path": "vendor/realme",
     "branch"     : "lineage-18.1"
   },
   {
