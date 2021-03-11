@@ -28,6 +28,9 @@ $(call inherit-product, vendor/realme/mt6785-common/mt6785-common-vendor.mk)
 # IMS
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
+# EngineerMode
+$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # VNDK
@@ -111,7 +114,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.controls.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.controls.xml \
-    $(COMMON_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(COMMON_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
  
 # Power
