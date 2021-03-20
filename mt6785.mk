@@ -31,6 +31,9 @@ $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 # EngineerMode
 $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 
+# Parts
+$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # VNDK
