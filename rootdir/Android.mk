@@ -37,3 +37,9 @@ LOCAL_MODULE := perf_profile.sh
 LOCAL_SRC_FILES := bin/perf_profile.sh
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := resetprop_phh
+LOCAL_SRC_FILES := bin/resetprop_phh
+LOCAL_MODULE_CLASS := EXECUTABLES
+include $(BUILD_PREBUILT)

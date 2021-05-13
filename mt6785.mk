@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mt6785.rc \
     fstab.mt6785 \
-    perf_profile.sh
+    perf_profile.sh \
+    resetprop_phh
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
