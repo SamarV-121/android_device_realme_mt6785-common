@@ -12,3 +12,6 @@ allow init sysfs_ged:file { w_file_perms setattr };
 
 # Allow init to change owner of /proc/cpufreq
 allow init proc_cpufreq:file { w_file_perms setattr };
+
+# Allow init to create socket_device(s)
+allow init socket_device:sock_file create_file_perms;
