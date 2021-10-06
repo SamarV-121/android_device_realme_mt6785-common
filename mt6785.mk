@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
     libshim_vtservice
 
 # Telephony
-PRODUCT_BOOT_JARS += \
+# PRODUCT_BOOT_JARS += \
     ImsServiceBase \
     mediatek-common \
     mediatek-framework \
