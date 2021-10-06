@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
 # Telephony
-PRODUCT_BOOT_JARS += \
+# PRODUCT_BOOT_JARS += \
     ImsServiceBase \
     mediatek-common \
     mediatek-framework \
