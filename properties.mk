@@ -12,6 +12,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=420
 
+# Fingerprint
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    fingerprint.nocleanup=true
+
 # IMS
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
