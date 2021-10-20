@@ -39,6 +39,9 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
 # Audio
 TARGET_EXCLUDES_AUDIOFX := true
 
@@ -46,7 +49,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml
+    $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -64,7 +67,7 @@ PRODUCT_PACKAGES += \
     libhidltransport
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/vintf/manifest/vendor_override_manifest.xml
+    $(COMMON_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/vintf/manifest/vendor_override_manifest.xml
 
 # ImsInit hack
 PRODUCT_PACKAGES += \
