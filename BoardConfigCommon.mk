@@ -52,6 +52,7 @@ BUILD_BROKEN_DUP_RULES := true
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # Kernel
+include device/realme/oppo6785-kernel/BoardConfigKernel.mk
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 
 BOARD_KERNEL_BASE := 0x40078000
